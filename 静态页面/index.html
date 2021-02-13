@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="https://www.ommdata.com//images/upload/ico/20201014/1602654686878OpkDfP.ico"
+          type="image/x-icon">
+    <title>登录</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="login-warp-2019">
+        <section class="clearfix">
+            <div class="login-warp-l-2019 fl">
+                <img src="https://www.ommdata.com/images/upload/image/20200918/1600408404018NSKT5w.jpg">
+            </div>
+            <div class="login-warp-r-2019 fr">
+                <div class="login-warp-r-2019-info">
+                    <div>
+                        <a href="https://www.ommdata.com/" title="返回首页" class="fSize14 f-fM">返回首页</a>
+                        <a href="https://www.ommdata.com/front/login" title="学员登录" class="login-warp-r-2019-info-back fr tac">学员登录</a>
+                    </div>
+                    <div class="login-warp-r-2019-info-bottom">
+                        <div class="clearfix login-warp-r-2019-info-b-title">
+                            <a href="#" title="手机号登录" class="f-fM cur">手机号登录</a>
+                        </div>
+                        <div class="login-warp-r-2019-info-b-from">
+                            <ol class="login-options-2019 login-options-2019-dl">
+                                <li id="phone">
+                                    <p class="c-333 f-fM ml5 login-options-2019-name">手机号</p>
+                                    <div class="login-options-2019-lab mt5">
+                                        <em class="login-options-2019-lab-ico">
+                                            <img src="https://www.ommdata.com/static/inxweb/img/2019-img/2019-login-mobile.png">
+                                        </em>
+                                        <input type="text" name="mobile-val" id="mobile-val"
+                                               onkeyup='$("#errorMsg").text("");'
+                                               placeholder="请输入手机号"/>
+                                    </div>
+                                </li>
+                                <li id="pwd">
+                                    <p class="c-333 f-fM ml5 login-options-2019-name">密码</p>
+                                    <div class="login-options-2019-lab mt5">
+                                        <em class="login-options-2019-lab-ico">
+                                            <img src="https://www.ommdata.com/static/inxweb/img/2019-img/2019-login-password.png">
+                                        </em>
+                                        <input type="password" name="password" id="pwd-val"
+                                               onkeyup='$("#errorMsg").text("");'
+                                               class="pass-show" placeholder="请输入密码" value=""/>
+                                        <em class="login-options-2019-lab-eye">
+                                            <img src="https://www.ommdata.com/static/inxweb/img/2019-img/input-close.png"
+                                                 class="hide-pic">
+<!--                                            <img src="https://www.ommdata.com/static/inxweb/img/2019-img/input-look.png"-->
+<!--                                                 class="show-pic">-->
+                                        </em>
+                                    </div>
+                                </li>
+                                <li class="yzm-h" id="yzm-h">
+                                    <p class="c-333 f-fM ml5 login-options-2019-name">验证码</p>
+                                    <div class="clearfix login-options-2019-lab-yzm">
+                                        <div class="login-options-2019-lab mt5 fl ">
+                                            <em class="login-options-2019-lab-ico login-options-2019-lab-ico-moble">
+                                                <img src="https://www.ommdata.com/static/inxweb/img/2019-img/2019-login-erification.png">
+                                            </em>
+                                            <input type="text" name="" maxlength="4" id="u-randomcode-reg"
+                                                   class="u-randomcode-reg" placeholder="请输入验证码" value=""/>
+                                        </div>
+                                        <img id="random" src="https://www.ommdata.com/ran/ajax/random" alt="验证码，点击图片更换"
+                                             class="fr yz-pic" maxlength="4"
+                                             onclick="this.src='https://www.ommdata.com/ran/ajax/random?random='+Math.random();"
+                                             id="click-img"/>
+                                    </div>
+                                    <p class="lr-tip-wrap" id="yzm-val"></p>
+                                </li>
+                                <li>
+                                    <div>
+                                        <a href="#" title="登 录"
+                                           class="login-options-2019-btn tac  f-fM c-fff fSize16"
+                                           onclick="">登 录</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="tac">
+                                        <a href="#" title="去注册"
+                                           class="f-fM tac fSize16 login-options-2019-zc">
+                                            <span class="login-2019-register-line login-2019-register-line-l"></span>
+                                            <span class="login-2019-register-line login-2019-register-line-r"></span>
+                                            还没账号？去注册
+                                        </a>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Vue!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .active {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div id="app1">
+        <h2 v-text="message"></h2>
+        <h2>{{message}}之部分替换案例</h2>
+    </div>
+    <div id="app2">
+        <p v-html="content"></p>
+        <p v-text="content"></p>
+    </div>
+    <div id="app3">
+        <input type="button" value="按钮点击" v-on:click="doIt">
+        <input type="button" value="按钮点击" @click="doIt">
+        <input type="button" value="按钮点击" v-on:doubleclick="doIt">
+        <h2 @click="foodchange">{{food}}</h2>
+    </div>
+    <div id="app4">
+        <div class="input-num" style="width: 200px;height: 50px;">
+            <button v-on:click="sub" style="width: 60px;">-</button>
+            <span>{{num}}</span>
+            <button v-on:click="add" style="width: 60px;">+</button>
+        </div>
+    </div>
+    <div id="app5">
+        <button @click="change">切换显示状态</button>
+        <img src="image/收款码.jpg" v-show="isShow">
+    </div>
+    <div id="app6">
+        <img :src="imgSrc">
+        <br>
+        <img :src="imgSrc" :class="isActive?'active':''" @click="change">
+        <br>
+        <img :src="imgSrc" :class="{active:isActive}" @click="change">
+    </div>
+    <div id="app7">
+        <button @click="sub" v-show="index!=0"><</button>
+        <img :src=srclist[index] style="width: 300px;height: 300px;">
+        <button @click="add" v-show="index<srclist.length-1">></button>
+    </div>
+    <div id="app8">
+        <ul>
+            <li v-for="(item,index) in arr">
+                这里是第{{index+1}}个标签，它的内容是{{item}}
+            </li>
+        </ul>
+    </div>
+    <div id="app9">
+        <input type="text" @keyup.enter="say">
+    </div>
+    <section id="app10">
+        <h2>记事本</h2>
+        <input type="text" v-model="message" @keyup.enter="push">
+        <ul>
+            <li v-for="(item,index) in list">{{index+1+' '}}{{item}}
+                <button @click="remove(index)">×</button>
+            </li>
+        </ul>
+        <footer v-show="list.length>0">
+        <span>
+            <strong v-text="list.length">{{list.length}}</strong>
+            <strong> items left</strong>
+        </span>
+            <button @click="clear">清空</button>
+        </footer>
+    </section>
+    <div>
+    <input type="button" value="get" class="get">
+    <input type="button" value="post" class="post">
+    </div>
+    <div id="app11">
+        <input type="button" value="获取笑话" @click="getjoke">
+        <p>{{joke}}</p>
+    </div>
+    <div id="app12">
+        <h2>天气查询功能</h2>
+        <input type="text" v-model="message" @keyup.enter="search">
+        <a href="javascript:;" @click="changeCity('武汉')">武汉</a>
+        <a href="javascript:;" @click="changeCity('临泉')">临泉</a>
+        <a href="javascript:;" @click="changeCity('北京')">北京</a>
+        <a href="javascript:;" @click="changeCity('合肥')">合肥</a>
+        <ul>
+            <li v-for="item in weatherList">
+                日期：{{item.date}}&nbsp&nbsp{{item.high}}&nbsp&nbsp{{item.low}}&nbsp&nbsp风向:{{item.fengxiang}}&nbsp&nbsp{{item.type}}
+            </li>
+        </ul>
+    </div>
+    <!--开发环境版本，包含了有帮助的命令行警告-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!--官网提供的axios 在钱地址:-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="learnvue.js"></script>
+</body>
+</html>

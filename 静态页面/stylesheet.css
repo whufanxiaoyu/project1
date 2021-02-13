@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+em, i {
+    font-style: normal
+}
+
+li {
+    list-style: none
+}
+
+img {
+    border: 0;
+    vertical-align: middle
+}
+
+button {
+    cursor: pointer
+}
+
+a {
+    color: #ff662f;
+    text-decoration: none
+}
+
+a:active {
+    outline: 0;
+    blr: expression(this.onFocus=this.blur());
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button, input {
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif
+}
+
+input {
+    border: 0;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+html, body {
+    height: 100%;
+}
+
+.clearfix {
+    display: block;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: visible;
+}
+
+.login-warp-2019 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.login-warp-l-2019 {
+    width: 56%;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.login-warp-r-2019 {
+    width: 44%;
+}
+
+.login-warp-l-2019 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.login-warp-r-2019-info {
+    padding: 20px 40px;
+}
+
+.fSize14 {
+    font-size: 14px;
+}
+
+.fSize16 {
+    font-size: 16px;
+}
+
+.c-fff {
+    color: #fff;
+}
+
+.f-fM {
+    font-family: 'Microsoft YaHei';
+}
+
+.tac {
+    text-align: center;
+}
+
+.login-warp-r-2019-info-back {
+    background-color: #ff662f;
+    display: block;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    width: 100px;
+    height: 32px;
+    line-height: 32px;
+    color: #fff;
+}
+
+.login-warp-r-2019-info-back:hover {
+    text-decoration: none;
+    opacity: 0.85;
+}
+
+.login-warp-r-2019-info-bottom {
+    width: 75%;
+    margin: 45px auto 0;
+}
+
+.login-warp-r-2019-info-b-title a.cur {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.login-warp-r-2019-info-b-from {
+    margin-top: 30px;
+}
+
+.login-options-2019-name {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.ml5 {
+    margin-left: 5px;
+}
+
+.login-options-2019 .login-options-2019-lab {
+    position: relative;
+    border: 1px solid #D6DBDF;
+}
+
+.mt5 {
+    margin-top: 5px;
+}
+
+.login-options-2019-lab-ico {
+    display: block;
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+
+.login-options-2019 input {
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 2px;
+    background: #fff;
+    padding: 0px 30px 0px 45px;
+    display: block;
+}
+
+.login-options-2019-lab-eye {
+    display: block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 9px;
+    right: 8px;
+}
+
+.login-options-2019-lab-yzm .yz-pic {
+    display: block;
+    width: 38%;
+    height: 38px;
+    margin-top: 5px;
+}
+
+.login-options-2019-btn {
+    margin-top: 50px;
+    display: block;
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 2px;
+    background: #ff662f;
+}
+
+.login-options-2019-btn:hover {
+    text-decoration: none;
+    opacity: 0.85;
+}
+
+.login-options-2019-zc {
+    display: inline-block;
+    position: relative;
+    line-height: 30px;
+}
+
+.login-2019-register-line {
+    background: #ff662f;
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    top: 15px;
+}
+
+.login-2019-register-line-l {
+    left: -50px;
+}
+
+.login-2019-register-line-r {
+    right: -50px;
+}
